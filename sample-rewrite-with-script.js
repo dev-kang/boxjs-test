@@ -25,15 +25,11 @@
 // console.log($response.body)
 // body = 1;
 
-// var body = $response.body;
+var body = $response.body;
 // var obj = JSON.parse(body);
-// console.log('obj')
-var obj = {}
-obj['result'] = 111111111111111;
-obj['code'] = 22222;
-obj['message'] = 33333;
-body = 222222222222222;
+console.log(body)
 
+body.replace('Weixin', "Hello")
 console.log(body);
 
 $done(body);
