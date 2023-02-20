@@ -32,7 +32,7 @@ var obj = {}
 obj['result'] = 111111111111111;
 obj['code'] = 22222;
 obj['message'] = 33333;
-body = JSON.stringify(obj);
+body = 222222222222222;
 
 console.log(body);
 
