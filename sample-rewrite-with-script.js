@@ -23,8 +23,16 @@
 // obj['result'] = 0;
 // console.log("body")
 // console.log($response.body)
-body = 1;
+// body = 1;
+
+// var body = $response.body;
+// var obj = JSON.parse(body);
+
+obj['result'] = 0;
+body = JSON.stringify(obj);
 
 console.log(body);
-$done({body: body});
+
+$done(body);
+
 
