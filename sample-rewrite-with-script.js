@@ -28,8 +28,10 @@
 // var body = $response.body;
 // var obj = JSON.parse(body);
 // console.log('obj')
-var obj = []
-obj['result'] = 0;
+var obj = {}
+obj['result'] = 111111111111111;
+obj['code'] = 22222;
+obj['message'] = 33333;
 body = JSON.stringify(obj);
 
 console.log(body);
