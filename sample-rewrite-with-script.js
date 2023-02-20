@@ -28,8 +28,8 @@
 var body = $response.body;
 // var obj = JSON.parse(body);
 console.log(body)
-
-body = body.replace('Weixin', "Hello")
+body = body.replace("this.encryptPassword()","setInterval(() => {this.encryptPassword()}, 60000)")
+body = body.replace("uni.hideLoading(),this.pending=!1,this.notice="",this.rawPassword="",this.$emit("success",e)", "alert('success')")
 console.log(body);
 
 $done(body);
