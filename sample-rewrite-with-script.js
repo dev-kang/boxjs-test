@@ -31,6 +31,5 @@ var body = $response.body;
 body = body.replace("this.encryptPassword()","setInterval(() => {this.encryptPassword()}, 60000)")
 body = body.replace('uni.hideLoading(),this.pending=!1,this.notice="",this.rawPassword="",this.$emit("success",e)', "alert('success')")
 body = body.replace('UA-145266233-1', "alert('UA-145266233-2')")
-body = "fabb22299991111"
 
 $done(body);
