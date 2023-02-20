@@ -29,7 +29,7 @@ var body = $response.body;
 // var obj = JSON.parse(body);
 console.log(body)
 
-body.replace('Weixin', "Hello")
+body = body.replace('Weixin', "Hello")
 console.log(body);
 
 $done(body);
