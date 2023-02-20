@@ -25,9 +25,9 @@
 // console.log($response.body)
 // body = 1;
 
-var body = $response.body;
-var obj = JSON.parse(body);
-console.log('obj')
+// var body = $response.body;
+// var obj = JSON.parse(body);
+// console.log('obj')
 var obj = []
 obj['result'] = 0;
 body = JSON.stringify(obj);
