@@ -26,5 +26,5 @@ console.log($response.body)
 body = 1;
 
 console.log(body);
+$done({body: body})
 
-$done(body);
