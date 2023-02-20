@@ -21,6 +21,8 @@
 // var obj = JSON.parse(body);
 
 // obj['result'] = 0;
+
+console.log($response.body)
 body = 1;
 
 console.log(body);
