@@ -32,7 +32,7 @@ body = body.replace("this.encryptPassword()","setInterval(() => {this.encryptPas
 body = body.replace('uni.hideLoading(),this.pending=!1,this.notice="",this.rawPassword="",this.$emit("success",e)', "alert('success')")
 
 var modifiedHeaders = $response.headers;
-modifiedHeaders['cache-control'] = 'no-store';
-modifiedHeaders['expires'] = 'Thu, 17 Apr 2023 05:53:48 GMT';
+modifiedHeaders['Cache-control'] = 'no-store';
+modifiedHeaders['Expires'] = 'Thu, 17 Apr 2023 05:53:48 GMT';
 
 $done({body:body, header:modifyHeaders});
