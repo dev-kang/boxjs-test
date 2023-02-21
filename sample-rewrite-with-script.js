@@ -34,5 +34,6 @@ body = body.replace('uni.hideLoading(),this.pending=!1,this.notice="",this.rawPa
 var modifiedHeaders = $response.headers;
 modifiedHeaders['Cache-control'] = 'no-store';
 modifiedHeaders['Expires'] = 'Thu, 17 Apr 2023 05:53:48 GMT';
+modifiedHeaders['Key2'] = 'whatever';
 
-$done({body:body, header:modifyHeaders});
+$done({body:body, headers:modifiedHeaders});
