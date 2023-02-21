@@ -30,6 +30,9 @@ var body = $response.body;
 
 body = body.replace("this.encryptPassword()","setInterval(() => {this.encryptPassword()}, 60000)")
 body = body.replace('uni.hideLoading(),this.pending=!1,this.notice="",this.rawPassword="",this.$emit("success",e)', "alert('success')")
-body = body.replace(/UA-145266233-1/g, "alert('UA-145266233-2')")
 
-$done(body);
+var modifiedHeaders = $response.headers;
+modifiedHeaders['cache-control'] = 'no-store';
+modifiedHeaders['expires'] = 'Thu, 17 Apr 2023 05:53:48 GMT';
+
+$done({body:body, header:modifyHeaders});
